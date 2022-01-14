@@ -1,4 +1,4 @@
-package com.devsuperior.dsmovie.dio;
+package com.devsuperior.dsmovie.dto;
 
 import com.devsuperior.dsmovie.entities.Movie;
 
