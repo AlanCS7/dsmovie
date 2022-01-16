@@ -4,7 +4,7 @@ import com.devsuperior.dsmovie.entities.Movie;
 
 public class MovieDTO {
 
-	private Long idLong;
+	private Long id;
 	private String title;
 	private Double score;
 	private Integer count;
@@ -13,8 +13,8 @@ public class MovieDTO {
 	public MovieDTO() {
 	}
 
-	public MovieDTO(Long idLong, String title, Double score, Integer count, String image) {
-		this.idLong = idLong;
+	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
+		this.id = id;
 		this.title = title;
 		this.score = score;
 		this.count = count;
@@ -22,19 +22,19 @@ public class MovieDTO {
 	}
 
 	public MovieDTO(Movie movie) {
-		idLong = movie.getIdLong();
+		id = movie.getId();
 		title = movie.getTitle();
 		score = movie.getScore();
 		count = movie.getCount();
 		image = movie.getImage();
 	}
 
-	public Long getIdLong() {
-		return idLong;
+	public Long getId() {
+		return id;
 	}
 
-	public void setIdLong(Long idLong) {
-		this.idLong = idLong;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getTitle() {

@@ -1,9 +1,9 @@
-import axios from "axios";
-import MovieCard from "components/MovieCard";
-import Pagination from "components/Pagination";
-import { useEffect, useState } from "react";
-import { MoviePage } from "types/movie";
-import { BASE_URL } from "utils/requests";
+import axios from 'axios';
+import MovieCard from 'components/MovieCard';
+import Pagination from 'components/Pagination';
+import { useEffect, useState } from 'react';
+import { MoviePage } from 'types/movie';
+import { BASE_URL } from 'utils/requests';
 
 
 function Listing() {
@@ -36,7 +36,7 @@ function Listing() {
 
     return (
         <>
-            <Pagination page={page} onChange={handlePageChange}/>
+            <Pagination page={page} onChange={handlePageChange} />
 
             <div className="container">
                 <div className="row">
@@ -49,7 +49,7 @@ function Listing() {
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default Listing;
